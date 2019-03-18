@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottomRegion"
+        android:icon="@drawable/ic_map"
+        android:title="Región"
+        />
+
+    <!--<item
+        android:id="@+id/bottomPokemon"
+        android:icon="@drawable/ic_poke"
+        android:title="Pokémon"
+        />-->
+
+    <item
+        android:id="@+id/bottomEquipo"
+        android:icon="@drawable/ic_pokeballs"
+        android:title="Equipos"
+        />
+
+    <item
+        android:id="@+id/bottomCerrar"
+        android:icon="@drawable/ic_account"
+        android:title="Cerrar Sesión"/>
+</menu>

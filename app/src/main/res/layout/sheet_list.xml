@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="bottom"
+              android:background="@color/grey_5"
+              android:orientation="vertical"
+              android:padding="@dimen/_10sdp">
+
+    <LinearLayout
+            android:id="@+id/Editt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@drawable/ripple_effect_list"
+            android:paddingStart="@dimen/_10sdp"
+            tools:ignore="RtlSymmetry"
+            android:visibility="gone"
+    >
+
+        <EditText
+                android:id="@+id/EdittNombre"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:hint="@string/renombrar_equipo"
+                android:singleLine="true"
+                android:inputType="textCapWords|textCapSentences"
+        />
+
+        <Button
+                android:id="@+id/btnRenombrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Renombrar"
+                android:theme="@style/Button.Primary"
+                android:textColor="@color/blanco"
+                android:textAllCaps="false"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/btnShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@drawable/ripple_effect_list"
+    >
+
+        <ImageView
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:padding="@dimen/_10sdp"
+                android:tint="@color/grey_60"
+                app:srcCompat="@drawable/ic_share" />
+
+        <TextView
+                android:id="@+id/textCompatir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="@string/compartir_equipo_pok_mon"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/grey_90" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnEditNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@drawable/ripple_effect_list"
+        >
+
+            <ImageView
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:padding="@dimen/_10sdp"
+                android:tint="@color/grey_60"
+                app:srcCompat="@drawable/ic_edit" />
+
+            <TextView
+                    android:id="@+id/textEditarNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="@string/editar_nombre_de_equipo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/grey_90" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/btnEditPoke"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@drawable/ripple_effect_list"
+        >
+
+            <ImageView
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:padding="@dimen/_10sdp"
+                    android:tint="@color/grey_60"
+                    app:srcCompat="@drawable/ic_poke" />
+
+            <TextView
+                    android:id="@+id/textEditar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:text="@string/editar_equipo_pok_mon"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/grey_90" />
+
+        </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/btnEliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@drawable/ripple_effect_list"
+    >
+
+        <ImageView
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:tint="@color/grey_60"
+                app:srcCompat="@drawable/ic_delete" />
+
+        <TextView
+                android:id="@+id/textEliminar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="@string/eliminar_equipo_pok_mon"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/grey_90" />
+
+    </LinearLayout>
+
+</LinearLayout>

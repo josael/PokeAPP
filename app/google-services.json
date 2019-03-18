@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "404215670170",
+    "firebase_url": "https://pokeapp-6ff21.firebaseio.com",
+    "project_id": "pokeapp-6ff21",
+    "storage_bucket": "pokeapp-6ff21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404215670170:android:6bfa9beb2d853e25",
+        "android_client_info": {
+          "package_name": "com.elaniin.poke.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "404215670170-dv27gm3obgol2al3fakul219q5jrh74o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.elaniin.poke.android",
+            "certificate_hash": "01f6346b4ffd88f95289c0df337c3737743cee93"
+          }
+        },
+        {
+          "client_id": "404215670170-jemjb08kkkekvtfikuor9nbm7edvmfs1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-TxGNRVbPcHrlV3mutJIDJsTbp-X2n2A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "404215670170-jemjb08kkkekvtfikuor9nbm7edvmfs1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

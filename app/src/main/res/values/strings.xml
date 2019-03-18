@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">PokeApp</string>
+    <string name="bienvenido">Bienvenido,</string>
+    <string name="textlogin">Ingresa con tu cuenta favorita.</string>
+    <string name="iniciar_sesi_n_con_facebook">Iniciar sesión con Facebook</string>
+    <string name="iniciar_sesi_n_con_google">Iniciar sesión con Google</string>
+    <string name="facebook_app_id">2074665159478545</string>
+    <string name="fb_login_protocol_scheme">fb2074665159478545</string>
+    <string name="request_client_id">404215670170-jemjb08kkkekvtfikuor9nbm7edvmfs1.apps.googleusercontent.com</string>
+    <string name="seleccione_sus_pok_mon">Seleccione sus Pokémon</string>
+    <string name="regi_n_pok_mon">Regiones Pokémon</string>
+    <string name="textEquipo">Equipo Pokémon</string>
+    <string name="textDetalle">Puedes crear tu equipo pokémon. \nPuedes elegir de 3 a 6 pokémon para tu equipo. \nEl
+        mínimo de pokémon para tu equipo es de 3.
+    </string>
+    <string name="name">Nombre:</string>
+    <string name="details_content">Details Content</string>
+    <string name="cerrar">Cerrar</string>
+    <string name="n_mero">Número:</string>
+    <string name="tipo">Tipo:</string>
+    <string name="regi_n">Región:</string>
+    <string name="descripci_n">Descripción:</string>
+    <string name="equipos_pok_mon">Equipos Pokémon</string>
+    <string name="compartir_equipo_pok_mon">Compartir equipo pokémon.</string>
+    <string name="editar_nombre_de_equipo">Editar nombre de equipo.</string>
+    <string name="editar_equipo_pok_mon">Editar equipo pokémon.</string>
+    <string name="eliminar_equipo_pok_mon">Eliminar equipo pokémon.</string>
+    <string name="renombrar_equipo">Renombrar Equipo</string>
+    <string name="nombre_equipo">Nombre Equipo</string>
+
+
+</resources>
