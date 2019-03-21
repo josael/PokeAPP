@@ -199,6 +199,11 @@ class EquipoInteractorImpl(present: InterfaceGlobal.EquipoPresenter) : Interface
         EdittNombre.typeface = Typeface.createFromAsset(contexto!!.assets, "font/Helvetica-Regular.ttf")
         btnRenombrar.typeface = Typeface.createFromAsset(contexto!!.assets, "font/helveticabold.ttf")
 
+        btnShare.setOnClickListener {
+            mBottomSheetDialog!!.dismiss()
+            presenter.showSnack("Compatir Equipo")
+        }
+
         btnEliminar.setOnClickListener {
             EditarBase("eliminar",mEquipoModel.id,"")
             mBottomSheetDialog!!.dismiss()

@@ -2,6 +2,7 @@ package com.elaniin.poke.android.Modulo
 
 import android.app.Activity
 import android.content.Context
+import com.elaniin.poke.android.Api.AppScope
 import com.elaniin.poke.android.Api.Globales
 import com.elaniin.poke.android.BuildConfig
 import com.google.gson.FieldNamingPolicy
@@ -18,7 +19,6 @@ import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
-import javax.inject.Singleton
 
 
 @Module
@@ -26,7 +26,7 @@ class LibModule(internal var mBaseUrl: String, internal var mActivity: Context, 
 
     //Gson
     @Provides
-    @Singleton
+    @AppScope
     internal fun provideGson(): Gson {
         val gsonBuilder = GsonBuilder()
         gsonBuilder.setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
@@ -35,7 +35,7 @@ class LibModule(internal var mBaseUrl: String, internal var mActivity: Context, 
 
     //cliente okhttp
     @Provides
-    @Singleton
+    @AppScope
     internal fun provideOkhttpClient(): OkHttpClient {
         try {
             var loggingInterceptor = HttpLoggingInterceptor()
@@ -61,7 +61,7 @@ class LibModule(internal var mBaseUrl: String, internal var mActivity: Context, 
 
     //retrofit
     @Provides
-    @Singleton
+    @AppScope
     internal fun provideRetrofit(gson: Gson, okHttpClient: OkHttpClient): Retrofit {
 
         return Retrofit.Builder()
@@ -74,7 +74,7 @@ class LibModule(internal var mBaseUrl: String, internal var mActivity: Context, 
 
     //globales
     @Provides
-    @Singleton
+    @AppScope
     internal fun provideGlobales(): Globales {
         var funciones: Globales? = null
         funciones = Globales()

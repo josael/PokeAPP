@@ -1,12 +1,12 @@
 package com.elaniin.poke.android.Componente
 
+import com.elaniin.poke.android.Api.AppScope
 import com.elaniin.poke.android.Interactors.EquipoInteractorImpl
 import com.elaniin.poke.android.Modulo.LibModule
 import com.elaniin.poke.android.View.*
 import dagger.Component
-import javax.inject.Singleton
 
-@Singleton
+@AppScope
 @Component(modules = arrayOf(LibModule::class))
 interface InyectComponent {
     fun inject(activity: Splash)
